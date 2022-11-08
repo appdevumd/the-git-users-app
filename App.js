@@ -4,9 +4,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { IansPage } from "./pages/IansPage";
+import { DJsPage } from "./pages/DJsPage";
+import { PatrickPage } from "./pages/PatrickPage";
 
 // Add your import below!
-import { IansPage } from "./pages/DanielsPage";
+import { DanielsPage } from "./pages/DanielsPage";
+import { RiyasPage } from "./pages/RiyasPage";
+import { LukesPage } from "./pages/LukesPage";
+import { evansPage } from "./pages/evansPage";
 
 function Home({ navigation }) {
   return (
@@ -17,13 +22,32 @@ function Home({ navigation }) {
         title="Ian"
         onPress={() => navigation.navigate("IansPage")}
       />
+      <Button
+        title="DJ"
+        onPress={() => navigation.navigate("DJsPage")}
+      />
 
       {/* Add yourself below! */}
       <Button
         title="Daniel"
         onPress={() => navigation.navigate("DanielsPage")}
       />
-
+      <Button
+        title="Riya"
+        onPress={() => navigation.navigate("RiyasPage")}
+      />
+      <Button
+        title="Patrick"
+        onPress={() => navigation.navigate("PatrickPage")}
+      />
+      <Button
+        title="Luke"
+        onPress={() => navigation.navigate("LukesPage")}
+      />
+      <Button
+        title="Evan"
+        onPress={() => navigation.navigate("evansPage")}
+      />
     </ScrollView>
   );
 }
@@ -37,10 +61,14 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
 
         <Stack.Screen name="IansPage" component={IansPage} />
+        <Stack.Screen name="PatrickPage" component={PatrickPage} />
 
         {/* Add yourself below! */}
-
         <Stack.Screen name="DanielsPage" component={DanielsPage} />
+        <Stack.Screen name="RiyasPage" component={RiyasPage} />
+        <Stack.Screen name="LukesPage" component={LukesPage} />
+        <Stack.Screen name="evansPage" component={evansPage} />
+        <Stack.Screen name="DJsPage" component={DJsPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
