@@ -8,7 +8,7 @@ import { DJsPage } from "./pages/DJsPage";
 import { PatrickPage } from "./pages/PatrickPage";
 
 // Add your import below!
-
+import { evansPage } from "./pages/evansPage";
 
 function Home({ navigation }) {
   return (
@@ -30,6 +30,10 @@ function Home({ navigation }) {
       />
 
       {/* Add yourself below! */}
+      <Button
+        title="Evan"
+        onPress={() => navigation.navigate("evansPage")}
+      />
 
     </ScrollView>
   );
@@ -47,6 +51,7 @@ export default function App() {
         <Stack.Screen name="PatrickPage" component={PatrickPage} />
 
         {/* Add yourself below! */}
+        <Stack.Screen name="evansPage" component={evansPage} />
         <Stack.Screen name="DJsPage" component={DJsPage} />
 
       </Stack.Navigator>
