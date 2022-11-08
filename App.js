@@ -8,6 +8,7 @@ import { DJsPage } from "./pages/DJsPage";
 import { PatrickPage } from "./pages/PatrickPage";
 
 // Add your import below!
+import { LukesPage } from "./pages/LukesPage";
 import { evansPage } from "./pages/evansPage";
 
 function Home({ navigation }) {
@@ -31,10 +32,13 @@ function Home({ navigation }) {
 
       {/* Add yourself below! */}
       <Button
+        title="Luke"
+        onPress={() => navigation.navigate("LukesPage")}
+      />
+      <Button
         title="Evan"
         onPress={() => navigation.navigate("evansPage")}
       />
-
     </ScrollView>
   );
 }
@@ -51,9 +55,9 @@ export default function App() {
         <Stack.Screen name="PatrickPage" component={PatrickPage} />
 
         {/* Add yourself below! */}
+        <Stack.Screen name="LukesPage" component={LukesPage} />
         <Stack.Screen name="evansPage" component={evansPage} />
         <Stack.Screen name="DJsPage" component={DJsPage} />
-
       </Stack.Navigator>
     </NavigationContainer>
   );
