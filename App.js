@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { IansPage } from "./pages/IansPage";
 
 // Add your import below!
+import { RahulsPage } from "./pages/RahulsPage";
 
 
 function Home({ navigation }) {
@@ -19,7 +20,8 @@ function Home({ navigation }) {
       />
 
       {/* Add yourself below! */}
-
+      title="Rahul"
+        onPress={() => navigation.navigate("RahulsPage")}
     </ScrollView>
   );
 }
@@ -35,6 +37,7 @@ export default function App() {
         <Stack.Screen name="IansPage" component={IansPage} />
 
         {/* Add yourself below! */}
+        <Stack.Screen name="RahulsPage" component={RahulsPage} />
 
       </Stack.Navigator>
     </NavigationContainer>
