@@ -12,6 +12,7 @@ import { DanielsPage } from "./pages/DanielsPage";
 import { RiyasPage } from "./pages/RiyasPage";
 import { LukesPage } from "./pages/LukesPage";
 import { evansPage } from "./pages/evansPage";
+import { YashsPage } from "./pages/YashPage";
 
 function Home({ navigation }) {
   return (
@@ -47,6 +48,10 @@ function Home({ navigation }) {
       <Button
         title="Evan"
         onPress={() => navigation.navigate("evansPage")}
+      />
+      <Button
+        title="Yash"
+        onPress={() => navigation.navigate("YashsPage")}
       />
     </ScrollView>
   );
