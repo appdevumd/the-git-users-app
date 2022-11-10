@@ -12,6 +12,7 @@ import { DanielsPage } from "./pages/DanielsPage";
 import { RiyasPage } from "./pages/RiyasPage";
 import { LukesPage } from "./pages/LukesPage";
 import { evansPage } from "./pages/evansPage";
+import { YashsPage } from "./pages/YashPage";
 
 function Home({ navigation }) {
   return (
@@ -48,6 +49,10 @@ function Home({ navigation }) {
         title="Evan"
         onPress={() => navigation.navigate("evansPage")}
       />
+      <Button
+        title="Yash"
+        onPress={() => navigation.navigate("YashsPage")}
+      />
     </ScrollView>
   );
 }
@@ -69,6 +74,7 @@ export default function App() {
         <Stack.Screen name="LukesPage" component={LukesPage} />
         <Stack.Screen name="evansPage" component={evansPage} />
         <Stack.Screen name="DJsPage" component={DJsPage} />
+        <Stack.Screen name="YashsPage" component={YashsPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
