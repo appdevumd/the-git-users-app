@@ -74,6 +74,7 @@ export default function App() {
         <Stack.Screen name="LukesPage" component={LukesPage} />
         <Stack.Screen name="evansPage" component={evansPage} />
         <Stack.Screen name="DJsPage" component={DJsPage} />
+        <Stack.Screen name="YashsPage" component={YashsPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
